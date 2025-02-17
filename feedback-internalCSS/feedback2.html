@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shresta Voruganti's Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        /* header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        } */
+        section {
+            margin: 20px;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #333;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 500px;
+            margin: auto;
+        }
+        label {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        input, textarea, select, button {
+            margin-top: 5px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        button {
+            background-color: #007BFF;
+            color: white;
+            cursor: pointer;
+            transition: background 0.3s ease-in-out;
+            font-size: 18px;
+            padding: 12px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        textarea {
+            resize: vertical;
+        }
+    </style>
+</head>
+<body>
+    <!-- <header>
+        <h1>Shresta Voruganti</h1>
+        <p>Computer Science Student | Web & Mobile Developer</p>
+    </header> -->
+    
+    <section id="feedback">
+        <h2>Feedback Form</h2>
+        <form action="#" method="post">
+            <label for="name">Name (Optional):</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name">
+            
+            <label for="email">Email (Optional):</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email">
+            
+            <label for="phone">Phone (Optional):</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+            
+            <label for="rating">Rating:</label>
+            <select id="rating" name="rating" required>
+                <option value="">Select Rating</option>
+                <option value="1">1 - Poor</option>
+                <option value="2">2 - Fair</option>
+                <option value="3">3 - Good</option>
+                <option value="4">4 - Very Good</option>
+                <option value="5">5 - Excellent</option>
+            </select>
+            
+            <label for="questions">Any Questions regarding product or service:</label>
+            <textarea id="questions" name="questions" rows="4" required placeholder="Type your questions here..."></textarea>
+            
+            <label for="comments">Additional Comments (Optional):</label>
+            <textarea id="comments" name="comments" rows="4" placeholder="Any additional feedback..."></textarea>
+            
+            <button type="submit">Submit Feedback</button>
+        </form>
+    </section>
+</body>
+</html>
+
